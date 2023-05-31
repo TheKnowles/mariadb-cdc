@@ -71,7 +71,7 @@ public class MariadbCdcConfig {
     }
 
     public void setHeartbeatPeriod(Duration heartbeatPeriodSeconds) {
-        this.heartbeatPeriod = heartbeatPeriod;
+        this.heartbeatPeriod = heartbeatPeriodSeconds;
     }
 
     public Duration getHeartbeatPeriod() {

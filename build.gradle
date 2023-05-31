@@ -14,7 +14,7 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-group = "com.github.madvirus"
+group = "dev.atchison"
 version = '1.0.4.1'
 
 repositories {

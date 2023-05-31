@@ -48,6 +48,9 @@ public class DefaultBinaryLogWrapper implements BinaryLogWrapper {
             client.setBinlogFilename(lastBinPos.getFilename());
             client.setBinlogPosition(lastBinPos.getPosition());
         }
+        if(config.getHeartbeatPeriod() != null) {
+            client.setHeartbeatInterval(config.getHeartbeatPeriod().toMillis());
+        }
         EventDeserializer eventDeserializer = new EventDeserializer();
         eventDeserializer.setCompatibilityMode(
                 EventDeserializer.CompatibilityMode.DATE_AND_TIME_AS_LONG
