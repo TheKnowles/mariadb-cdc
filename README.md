@@ -1,7 +1,5 @@
 # Usage
 
-> [Korean Doc - README-ko.md](README-ko.md)
-
 ## MariaDB Configuration
 
 ### Enabling binary logging: binlog_format setting
@@ -25,20 +23,23 @@ GRANT REPLICATION SLAVE, REPLICATION CLIENT, SELECT ON *.* TO cdc@'%'
 ## Repository
 
 ### Maven
+
+This fork of mariadb-cdc releases into maven central.  
+
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>maven-central</id>
+        <url>https://repo.maven.apache.org/maven2/</url>
     </repository>
 </repositories>
 ```
 
 ```xml
 <dependency>
-    <groupId>com.github.madvirus</groupId>
+    <groupId>dev.atchison</groupId>
     <artifactId>mariadb-cdc</artifactId>
-    <version>1.0.4.1</version>
+    <version>1.0.4.2</version>
 </dependency>
 ```
 
@@ -46,11 +47,10 @@ GRANT REPLICATION SLAVE, REPLICATION CLIENT, SELECT ON *.* TO cdc@'%'
 ```
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    implementation 'com.github.madvirus:mariadb-cdc:1.0.4.1'
+    implementation 'dev.atchison:mariadb-cdc:1.0.4.2'
 }
 ```
 
