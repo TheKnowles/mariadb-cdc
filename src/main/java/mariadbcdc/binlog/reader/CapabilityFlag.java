@@ -62,8 +62,8 @@ public enum CapabilityFlag {
      */
     CLIENT_SESSION_TRACK(1 << 23),
     /**
-     * EOF_Packet deprecation :<br/>
-     * OK_Packet replace EOF_Packet in end of Resulset when in text format<br/>
+     * EOF_Packet deprecation :<br>
+     * OK_Packet replace EOF_Packet in end of Resulset when in text format<br>
      * EOF_Packet between columns definition and resultsetRows is deleted
      */
     CLIENT_DEPRECATE_EOF(1 << 24),
